@@ -6,8 +6,7 @@ def print_num(start, end):
 
 
 if __name__ == '__main__':
-    print('This program will print all numbers from'
-          ' start to end.')
+    print('This program will print all numbers from start to end.')
     try:
         start = int(input('Enter the start number: '))
         end = int(input('Enter the end number: '))
