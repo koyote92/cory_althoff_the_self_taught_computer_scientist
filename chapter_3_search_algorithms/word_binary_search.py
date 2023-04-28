@@ -41,7 +41,7 @@ if __name__ == '__main__':
     # with spaces
     # array_of_words = input('Enter your array (separate words with spaces): ').split()
     array_of_words = ['word', 'dog', 'ball', 'world', 'book', 'hello',
-                      'program', 'software', 'system', 'search', 'spam',
+                      'program', 'software', 'system', 'search', 'spam', 'ham',
                       'eggs', 'biathlon', 'bamboo', 'basket', 'baobab',
                       'bamby', 'python', 'bash', 'github', 'cory', 'althoff',
                       'amazing', 'learning', 'science', 'laptop', 'cheese',
@@ -51,6 +51,8 @@ if __name__ == '__main__':
                       'door', 'liquid', 'cup', 'mouse', 'camera', 'stack',
                       'pile', 'tree', 'leaf', 'leather', 'paper', 'order',
                       'button', 'terminal', 'enter', 'space', 'road', 'task',
-                      'page', 'luck']
+                      'page', 'luck', 'unit', 'test', 'loop', 'query', 'zoo',
+                      'joke', 'key', 'indent', 'note', 'orchid', 'unique',
+                      'verb', 'you']
     needed_word = input('Enter a word from array above: ')
     word_binary_search(array_of_words, needed_word)
