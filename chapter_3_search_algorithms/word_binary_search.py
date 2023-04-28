@@ -13,8 +13,8 @@ def word_binary_search(array: list, word_to_find: str):
 
         if array[mid] == word_to_find:
             print(f'We found it in {iter_counter} steps.')
-            return print(f'"{word_to_find}" word index '
-                         f'in sorted array is: {mid}')
+            return print(f'"{word_to_find}" word index'
+                         f' in sorted array is: {mid}')
         elif mid_first_char_ord < word_to_find_first_char_ord:
             start = mid + 1
         elif mid_first_char_ord > word_to_find_first_char_ord:
