@@ -31,6 +31,7 @@ def word_binary_search(array: list, word_to_find: str):
                 start = mid + 1
             else:
                 end = mid - 1
+
     return print(f'"{word_to_find}" is not in array')
 
 
