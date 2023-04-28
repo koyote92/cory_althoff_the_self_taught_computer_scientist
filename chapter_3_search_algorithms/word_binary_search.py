@@ -46,8 +46,8 @@ if __name__ == '__main__':
     # array_of_words = input().split()
 
     array_of_words = ['word', 'dog', 'ball', 'world', 'book', 'hello',
-                      'program', 'software', 'system', 'search', 'spam', 'ham',
-                      'eggs', 'biathlon', 'bamboo', 'basket', 'baobab',
+                      'program', 'software', 'system', 'search', 'spam',
+                      'ham', 'eggs', 'biathlon', 'bamboo', 'basket', 'baobab',
                       'bamby', 'monty', 'python', 'bash', 'cory', 'althoff',
                       'amazing', 'learning', 'science', 'laptop', 'victory',
                       'list', 'worm', 'binary', 'start', 'repository', 'git',
