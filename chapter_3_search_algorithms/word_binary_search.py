@@ -43,9 +43,9 @@ if __name__ == '__main__':
     array_of_words = ['word', 'dog', 'ball', 'world', 'book', 'hello',
                       'program', 'software', 'system', 'search', 'spam', 'ham',
                       'eggs', 'biathlon', 'bamboo', 'basket', 'baobab',
-                      'bamby', 'python', 'bash', 'github', 'cory', 'althoff',
+                      'bamby', 'monty', 'python', 'bash', 'cory', 'althoff',
                       'amazing', 'learning', 'science', 'laptop', 'cheese',
-                      'list', 'word', 'binary', 'search', 'repository', 'git',
+                      'list', 'worm', 'binary', 'start', 'repository', 'git',
                       'koyote', 'roman', 'inozemtsev', 'map', 'library',
                       'quest', 'challenge', 'cat', 'work', 'fun', 'example',
                       'door', 'liquid', 'cup', 'mouse', 'camera', 'stack',
@@ -53,6 +53,6 @@ if __name__ == '__main__':
                       'button', 'terminal', 'enter', 'space', 'road', 'task',
                       'page', 'luck', 'unit', 'test', 'loop', 'query', 'zoo',
                       'joke', 'key', 'indent', 'note', 'orchid', 'unique',
-                      'verb', 'you']
+                      'verb', 'you', 'github', 'flow', 'yield', 'success']
     needed_word = input('Enter a word from array above: ')
     word_binary_search(array_of_words, needed_word)
