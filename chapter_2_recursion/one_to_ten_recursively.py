@@ -1,4 +1,4 @@
-def print_num(start, end):
+def print_num(start: int, end: int) -> None:
     print(start, end=' ')
     if start == end:
         return

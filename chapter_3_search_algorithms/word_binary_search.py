@@ -1,23 +1,28 @@
-def word_binary_search(array, word_to_find):
+def word_binary_search(array: list, word_to_find: str):
     array.sort()
     print(f'Array length: {len(array)}')
-    print('Sorted array:')
-    print(array)
+    print(f'Sorted array: {array}')
     start = 0
     end = len(array) - 1
     iter_counter = 0
+
     while start <= end:
         iter_counter += 1
         mid = (start + end) // 2
+        mid_first_char_ord = ord(array[mid][0])
+        word_to_find_first_char_ord = ord(word_to_find[0])
+
         if array[mid] == word_to_find:
             print(f'We found it in {iter_counter} steps.')
-            return print(f'{word_to_find} word index in sorted array is: {mid}')
-        elif ord(array[mid][0]) < ord(word_to_find[0]):
+            return print(f'"{word_to_find}" word index '
+                         f'in sorted array is: {mid}')
+        elif mid_first_char_ord < word_to_find_first_char_ord:
             start = mid + 1
-        elif ord(array[mid][0]) > ord(word_to_find[0]):
+        elif mid_first_char_ord > word_to_find_first_char_ord:
             end = mid - 1
+
         else:
-            ord_counter, char_counter = ord(array[mid][0]), 1
+            ord_counter, char_counter = mid_first_char_ord, 1
             while (ord_counter + ord(array[mid][char_counter])
                    == ord_counter + ord(word_to_find[char_counter])):
                 ord_counter += ord(array[mid][char_counter])
@@ -27,13 +32,13 @@ def word_binary_search(array, word_to_find):
                 start = mid + 1
             else:
                 end = mid - 1
-    return
+    return print(f'"{word_to_find}" is not in array')
 
 
 if __name__ == '__main__':
-    print('This program sorts an array of words and then perform binary search '
-          'of needed word.')
-    # Replace the list below with next code to enter your array separated
+    print('This program sorts an array of words and then perform binary'
+          ' search of needed word.')
+    # Replace the list below with next code to enter your own array separated
     # with spaces
     # array = input('Enter your array (separate words with spaces): ').split()
     array = ['word', 'dog', 'ball', 'world', 'book', 'hello', 'program',
@@ -44,7 +49,7 @@ if __name__ == '__main__':
              'repository', 'git', 'koyote', 'roman', 'inozemtsev', 'map',
              'library', 'quest', 'challenge', 'cat', 'work', 'fun',
              'example', 'door', 'liquid', 'cup', 'mouse', 'camera',
-             'stack', 'pile', 'tree', 'leaf', 'leather', 'paper', 'fox'
+             'stack', 'pile', 'tree', 'leaf', 'leather', 'paper',
              'order', 'button', 'terminal', 'enter', 'space', 'road',
              'task', 'page', 'luck']
     word_to_find = input('Enter a word from array above: ')
