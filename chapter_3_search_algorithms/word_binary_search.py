@@ -38,9 +38,13 @@ def word_binary_search(array: list, word_to_find: str):
 if __name__ == '__main__':
     print('This program sorts an array of words and then perform binary'
           ' search of needed word.')
-    # Replace the list below with the next code to enter your own array separated
-    # with spaces
-    # array_of_words = input('Enter your array (separate words with spaces): ').split()
+
+    # Replace the list below with the next code to enter your own array
+    # separated with spaces.
+
+    # print('Enter your array (separate words with spaces):', end=' ')
+    # array_of_words = input().split()
+
     array_of_words = ['word', 'dog', 'ball', 'world', 'book', 'hello',
                       'program', 'software', 'system', 'search', 'spam', 'ham',
                       'eggs', 'biathlon', 'bamboo', 'basket', 'baobab',
@@ -55,5 +59,6 @@ if __name__ == '__main__':
                       'page', 'luck', 'unit', 'test', 'loop', 'query', 'zoo',
                       'joke', 'key', 'indent', 'note', 'orchid', 'unique',
                       'verb', 'you', 'github', 'flow', 'yield', 'success']
+
     needed_word = input('Enter a word from array above: ')
     word_binary_search(array_of_words, needed_word)
