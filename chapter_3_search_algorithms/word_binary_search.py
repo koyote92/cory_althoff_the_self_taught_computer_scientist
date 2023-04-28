@@ -45,7 +45,7 @@ if __name__ == '__main__':
                       'program', 'software', 'system', 'search', 'spam', 'ham',
                       'eggs', 'biathlon', 'bamboo', 'basket', 'baobab',
                       'bamby', 'monty', 'python', 'bash', 'cory', 'althoff',
-                      'amazing', 'learning', 'science', 'laptop', 'cheese',
+                      'amazing', 'learning', 'science', 'laptop', 'victory',
                       'list', 'worm', 'binary', 'start', 'repository', 'git',
                       'koyote', 'roman', 'inozemtsev', 'map', 'library',
                       'quest', 'challenge', 'cat', 'work', 'fun', 'example',
