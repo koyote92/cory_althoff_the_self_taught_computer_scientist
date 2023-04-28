@@ -2,8 +2,7 @@ def word_binary_search(array: list, word_to_find: str):
     array.sort()
     print(f'Array length: {len(array)}')
     print(f'Sorted array: {array}')
-    start = 0
-    end = len(array) - 1
+    start, end = 0, len(array) - 1
     iter_counter = 0
 
     while start <= end:
