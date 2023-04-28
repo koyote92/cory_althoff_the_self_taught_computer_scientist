@@ -21,13 +21,13 @@ def word_binary_search(array: list, word_to_find: str):
             end = mid - 1
 
         else:
-            ord_counter, char_counter = mid_first_char_ord, 1
-            while (ord_counter + ord(array[mid][char_counter])
-                   == ord_counter + ord(word_to_find[char_counter])):
-                ord_counter += ord(array[mid][char_counter])
-                char_counter += 1
-            if (ord_counter + ord(array[mid][char_counter])
-                    < ord_counter + ord(word_to_find[char_counter])):
+            ord_counter, char_index = mid_first_char_ord, 1
+            while (ord_counter + ord(array[mid][char_index])
+                   == ord_counter + ord(word_to_find[char_index])):
+                ord_counter += ord(array[mid][char_index])
+                char_index += 1
+            if (ord_counter + ord(array[mid][char_index])
+                    < ord_counter + ord(word_to_find[char_index])):
                 start = mid + 1
             else:
                 end = mid - 1
